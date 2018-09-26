@@ -17,11 +17,15 @@ random_mid_number = random.randint(34, 66)
 random_high_number = random.randint(67, 100) 
 
 if name > lover:
-	print(str(random_low_number) +"%")
+	print("Too bad " + str(random_low_number) +"%")
 elif name == lover: 
-	print(str(random_mid_number) +"%")
+	print("Nice Try " + str(random_mid_number) +"%")
 else:
-	print(str(random_high_number) +"%")
+	print("Go for it " + str(random_high_number) +"%")
+
+
+
+
 
 
 
