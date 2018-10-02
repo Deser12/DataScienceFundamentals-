@@ -3,9 +3,6 @@ friend_ages = [24, 25, 26]
 friends_snack = []
 
 for names in friends_names: 
-	# print(names)
-	# # printing the length of the names
-	# print(str(len(names)) + " letter name")
 
 	#adding the input of the snacks into the empty friends snack list 
 	friends_snack.append(input(names + " (" + str(len(names)) + ")" + " What's your favorite snack?"))
