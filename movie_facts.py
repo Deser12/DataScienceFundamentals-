@@ -14,9 +14,14 @@ movies["actors"] = ["Harrisson Ford", "Rutger Hauer", "Sean Young"]
 #Add a comma after the actornames
 movies["actors"] = ", ".join(movies["actors"])
 
+#Use the .item() method to print the key and the values. 
 for key, value in movies.items(): 
 	print(f"{key} :  {value}")
 	
+
+
+
+
 
 
 
