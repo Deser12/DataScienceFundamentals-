@@ -21,8 +21,20 @@ def check(language):
 				print("\n")
 			print(data["extract"])
 			print("\n")
+	elif req.status_code == 404: 
+		if language == "en":
+			lan = "English"
+		elif language == "fr":
+			lan = "French"
+		elif language == "de":
+			lan = "German"
+		else:
+			print("Wrong article")
+
+		print(f"We can't find this article in {lan}")
 	else: 
 		print("Wrong article")
+
 
 language = ["en", "fr", "de"]
 for lang in language:
@@ -33,6 +45,11 @@ user_ask = input("Want to open the article in the browser? \n Y/N?")
 if user_ask == "Y" or "y":
 	webbrowser.open(f'https://wikipedia.org/wiki/{user_input}')
 
-else: 
+elif user_ask == "n" or "N": 
 	exit()
+
+else:
+	user_ask = input("Want to open the article in the browser? \n Y/N?")
+
+
 
